@@ -1,0 +1,326 @@
+<HTML>
+	<HEAD>
+		<TITLE>Profile</TITLE>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='main_navbar.css' rel='stylesheet' type='text/css'>
+		<link href='fonts_sizes.css' rel='stylesheet' type='text/css'>
+
+		<link href='profile_view_content_right_content.css' rel='stylesheet' type='text/css'> 
+		<style type="text/css">
+
+	</style>
+	</HEAD>
+	<BODY>
+		<nav class="navbar navbar-default navbar-fixed-top font1 font_medium1 font_bold">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><img src="oldlogo.png"></a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Feed <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">My Wants</a></li>
+		        <li class="dropdown font_medium1">
+		          <a href="#" class="dropdown-toggle font_medium1" data-toggle="dropdown" role="button" aria-expanded="false">Communities</a>
+		          <ul class="dropdown-menu font1 font_medium1" role="menu">
+		            <li><a href="#">My Communities</a></li>
+		            <li><a href="#">Join Communities</a></li>
+		            <li><a href="#">Create Communities</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown font_medium1">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">People</a>
+		          <ul class="dropdown-menu font1 font_medium1" role="menu">
+		            <li><a href="#">Favourites</a></li>
+		            <li><a href="#">Potential Helpers</a></li>
+		            <li><a href="#">My Hometown</a></li>
+		          </ul>
+		        </li>
+
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="profileicon.png" id="profileicon"></a>
+		          <ul class="dropdown-menu font1 font_medium1" role="menu">
+		            <li><a href="#">Account Details</a></li>
+		            <li><a href="#">Preferences</a></li>
+		            <li><a href="#">Sign out</a></li>
+		          </ul>
+		        </li>
+
+		        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="MessageBubble.png" id="chaticon"></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<div class="container">
+			<div class="row">		
+				
+				<div class="col-lg-2 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-0">
+					<div id="div_profile_profile_view" align="center">
+						<br>
+						<img src="profilelarge.png"><br><br>
+						<span class="font_small font_gray">Send Message</span><br>
+					</div>
+				</div>
+
+				<div class="col-lg-7 col-md-7 col-sm-9">	
+					<div class="well">
+						<span class="font1 font_large">Ron B.</span><br>
+						<span class="font1 font_medium1">This is a Headline</span><br>
+						<span class="font1 font_small">Auburn, Massachusetts, United States</span><br>
+						<span class="font1 font_small">Information Technology</span><br>
+						<span class="glyphicon glyphicon-stop"></span>&nbsp;<span class="glyphicon glyphicon-stop"></span>&nbsp;<span class="glyphicon glyphicon-stop"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-0">
+					<div class="btn btn-default btn-block btn_tab font1 font_medium1 active">Skills</div> <div class="btnpad"></div>
+					<div class="btn btn-default btn-block btn_tab font1 font_medium1"><a href="Profile_Interests.html">Interests</a></div> <div class="btnpad"></div>
+					<div class="btn btn-default btn-block btn_tab font1 font_medium1">Help Stats</div> <div class="btnpad"></div>
+					<div class="btn btn-default btn-block btn_tab font1 font_medium1">Communities</div> <div class="btnpad"></div>
+				</div>
+
+				<div class="col-lg-7 col-md-7 col-sm-9">
+					<div class="panel panel-default">
+						<div class="panel-heading"><span class=" font1 font_medium1">John's Skills</span></div>
+					    <div class="panel-body font1 font_medium1">
+					    	<img src="forhire_green.png" class="resize_icon"> = Available for hire on this skill <br>
+					    	<img src="mentor_green.png" class="resize_icon"> = Available to mentor / teach this skill for free <br>
+					    	<img src="speak_green.png" class="resize_icon"> = Available to speak on this skill 
+					    	<span class="align_right">
+					    		<a href="#"><span class="glyphicon glyphicon-plus-sign font_green" data-toggle="modal" data-target="#myModal"></span></a>
+					    		<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title font1 font_large">Add Skill</h4>
+        </div>
+        <div class="modal-body">
+        	<div class="row">
+        		<div class="col-lg-6 col-md-8 col-sm-9 col-xs-12">
+        			<input class="form-control" placeholder="Enter Skill here">
+        		</div>
+        	</div>
+        	<br>
+        	<div class="font1 font_medium2">
+        		<img src="forhire_green.png" class="resize_icon"> = Available for hire on this skill <br>
+				<img src="mentor_green.png" class="resize_icon"> = Available to mentor / teach this skill for free <br>
+				<img src="speak_green.png" class="resize_icon"> = Available to speak on this skill 
+        	</div><br>
+        	<div class="font1 font_medium1">
+        		Available to: 
+        		<img src="forhire_grey.png" class="resize_icon_medium">
+	        	<img src="mentor_green.png" class="resize_icon_medium">
+	        	<img src="speak_green.png" class="resize_icon_medium">
+        	</div><br>
+        	<div class="row">
+        		<div class="col-lg-6 col-md-8 col-sm-9 col-xs-12">
+        			<select class="form-control">
+				        <option>Certification / Instructor</option>
+				        <option>Expert +++</option>
+				        <option>Intermediate ++</option>
+				        <option>Basic +</option>
+				    </select>
+        		</div>
+        	</div>
+        	
+        	<button type="button" class="btn btn-default btn-sm btn_modal pull-right font_medium2" data-dismiss="modal">+ ADD</button>
+        	<br>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+					    		<a href="ProfileView_Edit.html"><span class="glyphicon glyphicon-pencil font_green"></span></a>
+					    	</span><br>
+
+					    	<table class="table table-striped">
+							    <thead>
+							      <tr>
+							        <th>Skill</th>
+							        <th>Availability</th>
+							        <th>Skill Level</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							        <td>Web development</td>
+							        <td>
+							        	<img class="forhire resize_icon" src="forhire_green.png" data-swap="forhire_grey.png" data-src="forhire_green.png" onclick="swapImage11()" id="forhire11" />
+							        	<img class="mentor resize_icon" src="mentor_green.png" data-swap="mentor_grey.png" data-src="mentor_green.png" onclick="swapImage12()" id="mentor12" />
+							        	<img class="speak resize_icon" src="speak_green.png" data-swap="speak_grey.png" data-src="speak_green.png" onclick="swapImage13()" id="speak13" />
+							        	
+							        	</td>
+							        <td>Expert+++</td>
+							      </tr>
+							      <tr>
+							        <td>Graphic Design</td>
+							        <td>
+							        	<img class="forhire resize_icon" src="forhire_green.png" data-swap="forhire_grey.png" data-src="forhire_green.png" onclick="swapImage21()" id="forhire21" />
+							        	<img class="mentor resize_icon" src="mentor_green.png" data-swap="mentor_grey.png" data-src="mentor_green.png" onclick="swapImage22()" id="mentor22" />
+							        	<img class="speak resize_icon" src="speak_green.png" data-swap="speak_grey.png" data-src="speak_green.png" onclick="swapImage23()" id="speak23" />
+							        </td>
+							        <td>Expert+++</td>
+							      </tr>
+							      <tr>
+							        <td>Computer Science</td>
+							        <td>
+							        	<img class="forhire resize_icon" src="forhire_green.png" data-swap="forhire_grey.png" data-src="forhire_green.png" onclick="swapImage31()" id="forhire31" />
+							        	<img class="mentor resize_icon" src="mentor_green.png" data-swap="mentor_grey.png" data-src="mentor_green.png" onclick="swapImage32()" id="mentor32" />
+							        	<img class="speak resize_icon" src="speak_green.png" data-swap="speak_grey.png" data-src="speak_green.png" onclick="swapImage33()" id="speak33" />
+							        </td>
+							        <td>Expert+++</td>
+							      </tr>
+							      <tr>
+							        <td>Project Management</td>
+							        <td>
+							        	<img class="forhire resize_icon" src="forhire_green.png" data-swap="forhire_grey.png" data-src="forhire_green.png" onclick="swapImage41()" id="forhire41" />
+							        	<img class="mentor resize_icon" src="mentor_green.png" data-swap="mentor_grey.png" data-src="mentor_green.png" onclick="swapImage42()" id="mentor42" />
+							        	<img class="speak resize_icon" src="speak_green.png" data-swap="speak_grey.png" data-src="speak_green.png" onclick="swapImage43()" id="speak43" />
+							        </td>
+							        <td>Expert+++</td>
+							      </tr>
+							    </tbody>
+							</table>
+					    </div>
+					</div>
+				</div>
+
+			</div> <!-- end of row -->
+		</div> <!-- end of container -->
+
+		<script type="text/javascript">
+    		function swapImage11(){
+			    var swapImage = $('#forhire11').attr('data-swap'),
+			        currentImage = $('#forhire11').attr('src');
+
+			    $('#forhire11').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+			function swapImage12(){
+			    var swapImage = $('#mentor12').attr('data-swap'),
+			        currentImage = $('#mentor12').attr('src');
+
+			    $('#mentor12').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+			function swapImage13(){
+			    var swapImage = $('#speak13').attr('data-swap'),
+			        currentImage = $('#speak13').attr('src');
+
+			    $('#speak13').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+			function swapImage21(){
+			    var swapImage = $('#forhire21').attr('data-swap'),
+			        currentImage = $('#forhire21').attr('src');
+
+			    $('#forhire21').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+			function swapImage22(){
+			    var swapImage = $('#mentor22').attr('data-swap'),
+			        currentImage = $('#mentor22').attr('src');
+
+			    $('#mentor22').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+			function swapImage23(){
+			    var swapImage = $('#speak23').attr('data-swap'),
+			        currentImage = $('#speak23').attr('src');
+
+			    $('#speak23').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+			function swapImage31(){
+			    var swapImage = $('#forhire31').attr('data-swap'),
+			        currentImage = $('#forhire31').attr('src');
+
+			    $('#forhire31').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+			function swapImage32(){
+			    var swapImage = $('#mentor32').attr('data-swap'),
+			        currentImage = $('#mentor32').attr('src');
+
+			    $('#mentor32').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+			function swapImage33(){
+			    var swapImage = $('#speak33').attr('data-swap'),
+			        currentImage = $('#speak33').attr('src');
+
+			    $('#speak33').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+			function swapImage41(){
+			    var swapImage = $('#forhire41').attr('data-swap'),
+			        currentImage = $('#forhire41').attr('src');
+
+			    $('#forhire41').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+			function swapImage42(){
+			    var swapImage = $('#mentor42').attr('data-swap'),
+			        currentImage = $('#mentor42').attr('src');
+
+			    $('#mentor42').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+			function swapImage43(){
+			    var swapImage = $('#speak43').attr('data-swap'),
+			        currentImage = $('#speak43').attr('src');
+
+			    $('#speak43').attr({
+			        'src': swapImage,
+			        'data-swap': currentImage
+			    });
+			};
+    	</script>
+			
+	</BODY>
+</HTML>

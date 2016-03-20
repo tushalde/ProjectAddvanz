@@ -1,0 +1,39 @@
+.navbar-fixed-top {
+    background-color: #27ae60;
+    background-image: none;
+    max-height:30px !important;
+    min-height: 10px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+.footer {
+	background-color: #000000;
+	max-height:150px !important;
+    min-height: 150px;
+    height: 150px;
+    position: absolute;
+ bottom: 0;
+ width: 100%;
+}
+body {
+	padding-top: 40px;
+	background: url("neurons_color.png");
+	background-size: 100%;
+}
+.panel1 {
+	background-color: #F1F1F1;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.pad {
+	padding-bottom: 10px;
+}
+.pad_left {
+	padding-left: 15px;
+}
+.yellowbg {
+	background-color: #FAFFBD;
+}

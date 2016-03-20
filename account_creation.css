@@ -1,0 +1,29 @@
+.navbar-fixed-top {
+    background-color: #27ae60;
+    background-image: none;
+    max-height:70px !important;
+    min-height: 70px;
+    height: 70px;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+	padding-top: 80px;
+	background-size: 100%;
+	background-color: #e9eaed; 
+}
+
+.btn:hover, .btn:hover > * {
+	background-color: #28662c;
+	background-image: none;
+	color: white;
+}
+.btn-success, .btn-success > * {
+	background-color: #27ae60;
+	background-image: none;
+	color: white;
+}
+hr {
+	border-color: #000000;
+	width: 80%
+}

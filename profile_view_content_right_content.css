@@ -1,0 +1,128 @@
+body { padding-top: 70px; background-color: #e9eaed; }
+
+ #div_profile_profile_view{
+ 	background-color: #ffffff;
+ 	top: 70px;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+    //border: 1px solid #979da7;
+ }
+
+.well{
+	background-color: #ffffff;
+	background-image: none;
+}
+.btn_tab {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+a:hover {
+	text-decoration: none;
+}
+.btn:hover, .btn:hover > * {
+	background-color: #27ae60;
+	background-image: none;
+	color: white;
+}
+.btn-default, .btn-default > * {
+	background-color: white;
+	background-image: none;
+	color: #979da7;
+}
+.btn-default.active {
+	background-color: #27ae60;
+	background-image: none;
+	color: white;
+}
+#myTab li div.active, #myTab li div.active a{
+	background-color: #27ae60;
+	background-image: none;
+	color: white;
+}
+.btnpad {
+	padding-bottom: 10px;
+}
+
+.glyphicon-stop {
+	font-size: 25px;
+}
+.align_right {
+	float: right;
+}
+.resize_icon {
+	width: 20px;
+	height: 20px;
+}
+.resize_icon_medium {
+	width: 40px;
+	height: 40px;
+}
+ hr {
+    border: none;
+    height: 1px;
+    color: #000000; /* old IE */
+    background-color: #000000; /* Modern Browsers */
+    padding: 0px;
+}
+.panel .panel-heading {
+	padding-top: 17px;
+	padding-bottom: 17px;
+	background-color: #27ae60;
+	background-image: none;
+	color: white;
+}
+.glyphicon-remove-circle {
+	color: red;
+}
+select {
+	color: black;
+}
+option:hover {
+	background-color: #27ae60;
+}
+
+.modal-header {
+	background-color: #27ae60;
+	background-image: none;
+	color: white;
+}
+.modal-footer {
+	background-color: white;
+	background-image: none;
+	
+}
+.btn_modal {
+	background-color: #27ae60;
+	background-image: none;
+	color: white;
+
+}
+.modal-body {
+	background-color: #e9eaed;
+}
+.btn_join_pad {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.sharp-border {
+  border-radius: 0 !important;
+}
+.img_comm_resize{
+	width:110px;
+	height: 110px;
+	float: left;
+	padding-right: 10px;
+}
+.align_top{
+	vertical-align: text-top;
+}
+.accordion-heading {
+	background-color: #979da7;
+	background-image: none;
+}
+.accordion-heading .accordion-toggle {
+	color: white;
+	text-decoration: none;
+}
